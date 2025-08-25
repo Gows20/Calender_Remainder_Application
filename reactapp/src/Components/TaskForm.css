@@ -1,0 +1,65 @@
+/* Full container */
+.taskform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3, #00c6ff);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass card */
+.taskform-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.taskform-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Inputs */
+.taskform-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+}

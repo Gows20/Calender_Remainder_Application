@@ -1,0 +1,75 @@
+.spc-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3, #00c6ff);
+  background-size: 300% 300%;
+  animation: spcGradientShift 10s ease infinite;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+@keyframes spcGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.spc-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.spc-inputs input[type="text"],
+.spc-inputs input[type="date"] {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 200px;
+}
+
+.btn-add {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+}
+
+.spc-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.spc-table th, .spc-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  text-align: left;
+}
+
+.spc-table th {
+  background: rgba(255,255,255,0.2);
+  border-radius: 6px;
+}
+
+.spc-table td {
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+}

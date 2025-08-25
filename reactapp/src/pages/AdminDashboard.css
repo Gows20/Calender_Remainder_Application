@@ -1,0 +1,30 @@
+.admin-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.admin-card {
+  background: #f0e9ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.admin-card h3 {
+  color: #5a189a;
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

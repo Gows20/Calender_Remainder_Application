@@ -1,0 +1,68 @@
+.reminder-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3, #00c6ff);
+  background-size: 300% 300%;
+  animation: gradientShift 10s ease infinite;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input[type="text"],
+.input-section input[type="datetime-local"] {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.btn-add {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #e52e71, #ff8a00);
+}
+
+.task-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  font-size: 16px;
+}

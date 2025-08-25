@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3, #00c6ff);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
+  color: #fff;
+  font-size: 14px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
