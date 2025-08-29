@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./Pages/Login";
-import Home from "./Pages/Home";
-import Dashboard from "./Pages/Dashboard";
-import CalendarView from "./Pages/CalendarView";
-import ReminderPage from "./Pages/ReminderPage";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import CalendarView from "./pages/CalendarView";
+import ReminderPage from "./pages/ReminderPage";
 
 function App() {
   return (
